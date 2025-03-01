@@ -1,4 +1,4 @@
-# \\ dotfiles + installer //
+# \\ dotfiles + installer /
 
 This is my current dotfiles + install script to download, install and copy the correct files in the correct places
 
