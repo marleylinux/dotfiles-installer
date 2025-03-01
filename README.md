@@ -8,9 +8,10 @@ It's a good 'minimal' base from what I believe.
 
 # YOU MAY NEED TO sudo chmod 777 the app if it wont launch as ./
 
-git clone https://github.com/marleylinux/dotfiles && cd dotfiles
+git clone https://github.com/marleylinux/dotfiles && cd dotfiles-installer
 
 then gcc dotfilesinstaller.c -o DotfilesInstaller && ./DotfilesInstaller
+(there is a precompiled version included)
 
 We can also chain the commands together at once.
 
