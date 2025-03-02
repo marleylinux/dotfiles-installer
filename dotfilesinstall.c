@@ -53,7 +53,7 @@ void install_pictures(const char *username) {
     printf("\033[33mInstalling\033[0m \033[34mPictures...\033[0m\n");
 
     char destination[1024];
-    snprintf(destination, sizeof(destination), "/home/%s/Pictures", username);
+    snprintf(destination, sizeof(destination), "/home/%s", username);
 
     cp_r("Pictures", destination);
 }
@@ -75,12 +75,12 @@ void install_vimrc(const char *username) {
 
 void install_pacman_conf(const char *username) {
     printf("\033[33mInstalling\033[0m \033[36mpacman.conf...\033[0m\n");
-    sudo_cp("pacman.conf", "/etc/pacman.conf");
+    sudo_cp("pacman.conf", "/etc");
 }
 
 void install_cpupower(const char *username) {
     printf("\033[33mInstalling\033[0m \033[36mcpupower...\033[0m\n");
-    sudo_cp("cpupower", "/etc/default/cpupower");
+    sudo_cp("cpupower", "/etc/default");
     system("sudo cpupower frequency-set -g performance");
 }
 
@@ -88,7 +88,7 @@ void install_nwg_panel(const char *username) {
     printf("\033[33mInstalling\033[0m \033[35mnwg-panel...\033[0m\n");
 
     char destination[1024];
-    snprintf(destination, sizeof(destination), "/home/%s/.config/nwg-panel", username);
+    snprintf(destination, sizeof(destination), "/home/%s/.config", username);
 
     cp_r("nwg-panel", destination);
 }
@@ -98,7 +98,7 @@ void install_nwg_drawer(const char *username) {
     printf("\033[33mInstalling\033[0m \033[35mnwg-drawer...\033[0m\n");
 
     char destination[1024];
-    snprintf(destination, sizeof(destination), "/home/%s/.config/nwg-drawer", username);
+    snprintf(destination, sizeof(destination), "/home/%s/.config", username);
 
     cp_r("nwg-drawer", destination);
 }
@@ -108,7 +108,7 @@ void install_nwg_bar(const char *username) {
     printf("\033[33mInstalling\033[0m \033[35mnwg-bar...\033[0m\n");
 
     char destination[1024];
-    snprintf(destination, sizeof(destination), "/home/%s/.config/nwg-bar", username);
+    snprintf(destination, sizeof(destination), "/home/%s/.config", username);
 
     cp_r("nwg-bar", destination);
 }
@@ -118,7 +118,7 @@ void install_mangohud(const char *username) {
     printf("\033[33mInstalling\033[0m \033[33mMangoHud...\033[0m\n");
 
     char destination[1024];
-    snprintf(destination, sizeof(destination), "/home/%s/.config/MangoHud", username);
+    snprintf(destination, sizeof(destination), "/home/%s/.config", username);
 
     cp_r("MangoHud", destination);
 }
@@ -127,7 +127,7 @@ void install_hypr(const char *username) {
     printf("\033[33mInstalling\033[0m \033[36mhypr\033[0m\n");
 
     char destination[1024];
-    snprintf(destination, sizeof(destination), "/home/%s/.config/hypr", username);
+    snprintf(destination, sizeof(destination), "/home/%s/.config", username);
 
     cp_r("hypr", destination);
 }
@@ -139,7 +139,7 @@ void install_nwg_hello(const char *username) {
     sudo_cp_r("greetd", "/etc");
 
     printf("\033[33mInstalling\033[0m \033[31mgirl.png...\033[0m\n");
-    sudo_cp("Pictures/girl.png", "/usr/share/nwg-hello/girl.png");
+    sudo_cp("Pictures/girl.png", "/usr/share/nwg-hello");
 }
 
 
