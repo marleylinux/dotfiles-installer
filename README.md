@@ -1,18 +1,28 @@
-# \\ dotfiles + installer /
+Dotfiles Installer
+------------------
 
-This is my current dotfiles + install script to download, install and copy the correct files in the correct places
+Clone the repository:
+---------------------
+git clone https://github.com/marleylinux/dotfiles-installer.git
+cd dotfiles-installer
 
-It's a good 'minimal' base from what I believe.
+Either compile and run
+----------------------
+gcc dotfilesinstaller.c -o Dotfiles-Install
+./Dotfiles-Install
 
-# Instructions.
+Run the script:
+---------------
+./DotfilesInstall
 
-# YOU MAY NEED TO sudo chmod 777 the app if it wont launch as ./
+Notes
+-----
+This script is designed for my personal setup.
 
-git clone https://github.com/marleylinux/dotfiles && cd dotfiles-installer
+Installs necessary packages and dotfiles.
 
-then gcc dotfilesinstaller.c -o DotfilesInstaller && ./DotfilesInstaller
-(there is a precompiled version included)
+Modify it if you need to adapt it for your own use.
 
-We can also chain the commands together at once.
+Disclaimer
 
-git clone https://github.com/marleylinux/dotfiles && cd dotfiles && gcc dotfilesinstaller.c -o DotfilesInstaller && ./DotfilesInstaller
+Use at your own risk.
