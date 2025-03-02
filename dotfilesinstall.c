@@ -135,7 +135,7 @@ void install_hypr(const char *username) {
 
 void install_nwg_hello(const char *username) {
     printf("\033[33mInstalling\033[0m \033[31mnwg-hello...\033[0m\n");
-    sudo_cp_r("nwg-hello", "/etc/nwg-hello");
+    sudo_cp_r("nwg-hello", "/etc");
     sudo_cp_r("greetd", "/etc");
 
     printf("\033[33mInstalling\033[0m \033[31mgirl.png...\033[0m\n");
