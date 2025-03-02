@@ -9,6 +9,7 @@ cd dotfiles-installer
 Either compile and run
 ----------------------
 gcc dotfilesinstall.c -o Dotfiles-Install
+
 ./Dotfiles-Install
 
 Run the script:
