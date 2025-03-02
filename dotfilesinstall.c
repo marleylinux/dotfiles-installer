@@ -200,7 +200,7 @@ int main() {
     printf("\033[33m2.\033[0m \033[32mInstall\033[0m \033[36m.bashrc\033[0m\n");
     printf("\033[32m3.\033[0m \033[33mInstall\033[0m \033[32m.vimrc\033[0m\n");
     printf("\033[34m4.\033[0m \033[31mInstall\033[0m \033[36mpacman.conf\033[0m\n");
-    printf("\033[35m5.\033[0m \033[36mInstall\033[0m \033[34mcpupower\033[0m\n");
+    printf("\033[35m5.\033[0m \033[36mInstall\033[0m \033[34mcpupower (set to 4.5GHz - 4.9GHz dont use if too high)\033[0m\n");
     printf("\033[36m6.\033[0m \033[34mInstall\033[0m \033[35mnwg-panel\033[0m\n");
     printf("\033[31m7.\033[0m \033[32mInstall\033[0m \033[35mnwg-drawer\033[0m\n");
     printf("\033[33m8.\033[0m \033[33mInstall\033[0m \033[35mnwg-bar\033[0m\n");
