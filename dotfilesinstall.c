@@ -81,6 +81,7 @@ void install_pacman_conf(const char *username) {
 void install_cpupower(const char *username) {
     printf("\033[33mInstalling\033[0m \033[36mcpupower...\033[0m\n");
     sudo_cp("cpupower", "/etc/default/cpupower");
+    system("sudo cpupower frequency-set -g performance");
 }
 
 void install_nwg_panel(const char *username) {
