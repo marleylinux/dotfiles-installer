@@ -139,7 +139,7 @@ void install_nwg_hello(const char *username) {
     sudo_cp_r("greetd", "/etc");
 
     printf("\033[33mInstalling\033[0m \033[31mgirl.png...\033[0m\n");
-    sudo_cp("Pictures/girl.png", "/usr/share/nwg-hello");
+    sudo_cp("girl.png", "/usr/share/nwg-hello");
 }
 
 
